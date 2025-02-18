@@ -5,37 +5,31 @@
     <title>Guess Game</title>
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body
-    class="h-screen bg-gradient-to-r from-blue-400 to-purple-500 flex flex-col items-center justify-center text-white"
-  >
-    <div class="bg-white bg-opacity-20 p-8 rounded-lg shadow-lg text-center">
-      <p id="result" class="text-4xl font-bold mb-4 text-green-500"></p>
-      <p class="text-lg">
-        Number of guesses: <span class="font-bold" id="countGuess">0</span>
-      </p>
-      <p id="timer" class="text-lg">Time: 30</p>
-      <p class="mt-5 mb-5 text-lg">Enter a number between 1 and 20</p>
-      <div class="flex items-center space-x-4">
-        <input
-          type="text"
-          id="guess"
-          class="border bg-white bg-opacity-80 px-4 py-2 rounded-lg shadow-md text-black"
-          placeholder="Enter a number between 1 and 20"
-        />
-        <button
-          onclick="check()"
-          class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600"
-        >
-          Guess
-        </button>
-      </div>
+  <body class="h-screen bg-gray-100 flex flex-col items-center justify-center">
+    <p id="result" class="text-4xl font-bold mb-4 text-green-500"></p>
+    <p>Number of guess: <span class="font-bold" id="countGuess">0</span></p>
+    <p id="timer">Time: 30</p>
+    <p class="mt-5 mb-5">Enter a number between 1 and 20</p>
+    <div class="flex items-center space-x-4">
+      <input
+        type="text"
+        id="guess"
+        class="border bg-white px-4 py-2 rounded-lg shadow-md"
+        placeholder="Enter a number between 1 and 20"
+      />
       <button
-        onclick="reset()"
-        class="mt-4 bg-red-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-red-600"
+        onclick="check()"
+        class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600"
       >
-        Play again
+        Guess
       </button>
     </div>
+    <button
+      onclick="reset()"
+      class="mt-4 bg-red-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-red-600"
+    >
+      Play again
+    </button>
     <script src="app.js"></script>
   </body>
 </html>
