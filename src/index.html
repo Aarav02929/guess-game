@@ -2,14 +2,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Start Page</title>
+    <title>Guess Game</title>
     <link rel="stylesheet" href="output.css" />
   </head>
   <body
     class="flex items-center justify-center h-screen bg-gradient-to-r from-blue-400 to-purple-500"
   >
-    <div class="text-center bg-white bg-opacity-20 p-8 rounded-lg shadow-lg">
-      <p class="text-lg mb-4">When you are ready to begin please click start</p>
+    <div
+      class="text-center bg-white bg-opacity-20 p-8 rounded-lg shadow-lg w-106 h-70"
+    >
+      <h1 class="text-4xl font-bold mb-4">Guess Game</h1>
+      <p class="text-lg mb-4">Guess a number between 1 and 20.</p>
+      <p class="text-lg mb-4">You have 5 guesses.</p>
+      <p class="text-lg mb-4">The timer is 30 seconds.</p>
       <button
         class="bg-green-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-600 cursor-pointer"
         onclick="window.location.href = 'game.html'"
