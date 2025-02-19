@@ -4,7 +4,7 @@ let guessCountElement = document.getElementById("countGuess");
 let guessButton = document.querySelector("button[onclick='check()']");
 let guessCount = 0;
 
-const MAX_GUESSES = 5;
+const MAX_GUESSES = 6;
 
 function check() {
   let guess = guessInput.value;

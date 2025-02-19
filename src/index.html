@@ -2,35 +2,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guess Game</title>
+    <title>Start Page</title>
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="h-screen bg-gray-100 flex flex-col items-center justify-center">
-    <p id="result" class="text-4xl font-bold mb-4 text-green-500"></p>
-    <p>Number of guess: <span class="font-bold" id="countGuess">0</span></p>
-    <p id="timer">Time: 30</p>
-    <p class="mt-5 mb-5">Enter a number between 1 and 20</p>
-    <p class="mb-5">You only have 5 guesses in total</p>
-    <div class="flex items-center space-x-4">
-      <input
-        type="text"
-        id="guess"
-        class="border bg-white px-4 py-2 rounded-lg shadow-md"
-        placeholder="Enter a number between 1 and 20"
-      />
+  <body
+    class="flex items-center justify-center h-screen bg-gradient-to-r from-blue-400 to-purple-500"
+  >
+    <div class="text-center bg-white bg-opacity-20 p-8 rounded-lg shadow-lg">
+      <p class="text-lg mb-4">When you are ready to begin please click start</p>
       <button
-        onclick="check()"
-        class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600"
+        class="bg-green-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-600 cursor-pointer"
+        onclick="window.location.href = 'game.html'"
       >
-        Guess
+        Begin
       </button>
     </div>
-    <button
-      onclick="reset()"
-      class="mt-4 bg-red-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-red-600"
-    >
-      Play again
-    </button>
-    <script src="app.js"></script>
   </body>
 </html>
